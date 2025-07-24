@@ -4,113 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kyla | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #FFF8F8;
-      color: #3A2E2E;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      padding: 20px;
-    }
-
-    .hero {
-      z-index: 1;
-    }
-
-    .name {
-      font-family: 'Playfair Display', serif;
-      font-size: 48px;
-      font-weight: bold;
-    }
-
-    .title {
-      font-size: 20px;
-      color: #B3A4C3;
-      margin: 8px 0;
-    }
-
-    .quote {
-      font-style: italic;
-      font-weight: 300;
-      font-size: 18px;
-      margin: 20px 0;
-    }
-
-    .btn {
-      padding: 12px 30px;
-      font-size: 16px;
-      border: none;
-      border-radius: 24px;
-      background-color: #E3A8B1;
-      color: white;
-      cursor: pointer;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #B7798B;
-    }
-
-    .arrow {
-      margin-top: 30px;
-      font-size: 24px;
-      color: #B3A4C3;
-      animation: floatArrow 1.5s infinite ease-in-out;
-    }
-
-    @keyframes floatArrow {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(8px); }
-    }
-
-    .blob-lavender, .blob-blush {
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      opacity: 0.2;
-      z-index: 0;
-    }
-
-    .blob-lavender {
-      background-color: #E5DAF2;
-      top: -80px;
-      left: -80px;
-    }
-
-    .blob-blush {
-      background-color: #FDECEC;
-      bottom: -80px;
-      right: -80px;
-    }
-  </style>
 </head>
 <body>
 
-  <div class="blob-lavender"></div>
-  <div class="blob-blush"></div>
+  <!-- 🌸 Navbar -->
+  <nav class="navbar">
+    <div class="logo">KYLA ✨</div>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <div class="hero">
-    <div class="name">KYLA ✨</div>
-    <div class="title">Computer Engineering Student | Developer</div>
-    <div class="quote">“Creating soft, smart, and elegant digital experiences.”</div>
-    <a href="#projects"><button class="btn">View Projects</button></a>
+  <!-- 🎀 Hero Section -->
+  <section class="hero">
+    <div class="blob blob-lavender"></div>
+    <h1 class="name">KYLA ✨</h1>
+    <h2 class="title">Computer Engineer Student | Developer</h2>
+    <p class="tagline">“Creating soft, smart, and elegant digital experiences.”</p>
+    <a href="#projects" class="btn">View Projects</a>
     <div class="arrow">↓</div>
-  </div>
+    <div class="blob blob-blush"></div>
+  </section>
 
 </body>
 </html>
