@@ -133,3 +133,12 @@ nav a:hover {
   font-size: 18px;
   color: #5C4A4A;
 }
+a {
+  color: #3A2E2E; /* same as your primary text color */
+  text-decoration: none; /* removes underline */
+}
+
+a:hover {
+  color: #E3A8B1; /* soft hover color */
+  text-decoration: underline; /* optional */
+}
